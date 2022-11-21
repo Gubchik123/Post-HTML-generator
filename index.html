@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Post HTML generator</title>
+
+		<!-- Site favicon -->
+		<link rel="icon" href="./static/images/favicon.ico }}" />
+
+		<!-- Bootstrap 5 CSS file -->
+		<link
+			rel="stylesheet"
+			crossorigin="anonymous"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		/>
+
+		<!-- General CSS file -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="./static/css/general.css"
+		/>
+	</head>
+	<body>
+		<div class="wrapper d-flex flex-column min-vh-100">
+			<header>
+				<nav
+					class="navbar navbar-expand-lg navbar-dark px-3 my-panel-bg-color d-flex justify-content-between align-items-center"
+				>
+					<a class="navbar-brand my-logo" href="#"
+						>Post HTML generator</a
+					>
+
+					<button
+						id="toggle-theme"
+						class="my-panel-bg-color rounded-circle"
+					>
+						<ion-icon
+							class="my-panel-bg-color rounded-circle"
+						></ion-icon>
+					</button>
+				</nav>
+			</header>
+
+			<main class="my-4">
+				<div class="container">
+					<div class="row">
+						<div
+							class="d-flex justify-content-between align-items-center"
+						>
+							<h1
+								class="mb-4 {%- block content_title_classes -%}{%- endblock -%}"
+							>
+								Create your post
+							</h1>
+						</div>
+
+						<button name="Go to top" id="go-to-top-btn">
+							<ion-icon name="arrow-up-outline"></ion-icon>
+						</button>
+					</div>
+
+					<div class="row">
+						<div class="alert alert-primary" role="alert">
+							<div class="float_left me-3">
+								<ion-icon name="alert-circle"></ion-icon>
+							</div>
+							<div
+								class="h-100 d-flex justify-content-center align-items-center"
+							>
+								<h5>Fill this area out using buttons below</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="row content_block">
+						<div
+							class="content border border-dark rounded py-2 my-3"
+						></div>
+
+						<div class="my-3 adding_buttons">
+							<button
+								id="add_subtitle1_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Subtitle I
+							</button>
+							<button
+								id="add_subtitle2_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Subtitle II
+							</button>
+							<button
+								id="add_paragraph_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Paragraph &nbsp;
+								<ion-icon
+									name="reorder-four-outline"
+								></ion-icon>
+							</button>
+							<button
+								id="add_link_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Link &nbsp;
+								<ion-icon name="link-outline"></ion-icon>
+							</button>
+							<button
+								id="add_code_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Code &nbsp;
+								<ion-icon name="code-outline"></ion-icon>
+							</button>
+							<button
+								id="add_image_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Image &nbsp;
+								<ion-icon name="image-outline"></ion-icon>
+							</button>
+							<button
+								id="add_alert_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Alert &nbsp;
+								<ion-icon
+									name="alert-circle-outline"
+								></ion-icon>
+							</button>
+							<button
+								id="add_line_btn"
+								class="btn btn-lg btn-primary mb-2 me-2"
+							>
+								Line &nbsp;
+								<ion-icon name="remove-outline"></ion-icon>
+							</button>
+						</div>
+
+						<button
+							id="post_submit"
+							class="btn btn-success btn-lg mt-2 mb-4 ms-3 w-50 d-flex justify-content-between align-items-center"
+						>
+							<span>Create post HTML</span>
+							<ion-icon
+								name="checkmark-circle-outline"
+							></ion-icon>
+						</button>
+					</div>
+
+					<div class="row">
+						<textarea
+							id="post_body"
+							style="height: 200px; display: none"
+							class="w-100 form-control"
+						></textarea>
+					</div>
+				</div>
+			</main>
+
+			<footer
+				class="container-fluid my-panel-bg-color d-flex flex-wrap justify-content-between align-items-center py-3"
+			>
+				<div class="col-md-4 d-flex align-items-center">
+					<a
+						href="#"
+						class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+					>
+						<ion-icon name="aperture"></ion-icon>
+					</a>
+					<span class="mb-3 mb-md-0 text-muted"
+						>&copy; 2022 Company, Inc</span
+					>
+				</div>
+
+				<ul
+					class="nav col-md-4 justify-content-end list-unstyled d-flex"
+				>
+					<li class="ms-3">
+						<a
+							target="_blank"
+							class="text-muted"
+							href="https://github.com/Gubchik123"
+						>
+							<ion-icon name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li class="ms-3">
+						<a
+							target="_blank"
+							class="text-muted"
+							href="https://www.instagram.com/nikitos.1746/"
+						>
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a>
+					</li>
+					<li class="ms-3">
+						<a class="text-muted" href="#">
+							<ion-icon name="logo-linkedin"></ion-icon>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+
+		<!-- Bootstrap 5 script -->
+		<script
+			crossorigin="anonymous"
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		></script>
+
+		<!-- Scripts for icons from "https://ionic.io/ionicons" -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+
+		<!-- Scrolling script -->
+		<script src="./static/js/scrolling.js"></script>
+
+		<!-- Light dark toggle script -->
+		<script src="./static/js/toggle_theme.js"></script>
+
+		<!-- Script for creating post -->
+		<script type="module" src="./static/js/post/create_post.js"></script>
+	</body>
+</html>
