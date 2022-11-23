@@ -77,6 +77,8 @@ main {
     overflow-x: hidden; 
 }
 
+.note-alert { border-left: 7px solid; }
+
 textarea { height: 20vh; }
 
 .content { min-height: 200px; }
