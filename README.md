@@ -3,7 +3,7 @@ _Page for generating post HTML using easy interface and usable buttons_
 
 ### Demo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3f7a5c61-3278-4d1c-9b5f-e8cc81bf15ad/deploy-status)](https://app.netlify.com/sites/gubchik123-project-board/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7718e5b3-3390-4290-bf6c-1e6c05bf1927/deploy-status)](https://app.netlify.com/sites/post-html-generator/deploys)
 
 Click **<a href="https://post-html-generator.netlify.app/" target="_blank">here</a>** to open post HTML generator page
 
